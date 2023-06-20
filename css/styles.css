@@ -106,7 +106,6 @@
 .btn_create:hover,.btn_find:hover{
     color: #fff; 
     border: 1px solid #fff;  
-    background-color: #000;
 }
 .btn_find{
   color: #fff;  
@@ -129,6 +128,8 @@
 .auto_type h2 span{
     color: #fff;
     font-size: 45px;
+    font-weight: 800;
+    text-transform: capitalize;
 }
 .auto_type p{
     color: #fff;
