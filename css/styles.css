@@ -2,39 +2,60 @@
 /* Typewriter effect 1 */
 @keyframes typing {
 
-  0.0000%, 27.3488% { content: ""; }
-  1.1395%, 26.2093% { content: ""; }
-  2.2791%, 25.0698% { content: "fa"; }
-  3.4186%, 23.9302% { content: "fac"; }
-  4.5581%, 22.7907% { content: "face"; }
-  5.6977%, 21.6512% { content: "faceb"; }
-  6.8372%, 20.5116% { content: "facebo"; }
-  7.9767%, 19.3721% { content: "faceboo"; }
-  9.1163%, 18.2326% { content: "facebook"; }
+  1.33%,15.96%{content: "B";}
+  2.66%,14.63%{content: "Be";}
+  3.99%,13.3%{content: "Bel";}
+  5.32%,11.97%{content: "Belk";}
+  6.65%,10.64%{content: "Belki";}
+  7.98%,9.31%{content: "Belkin";}
 
-  30.7674%, 51.2791% { content: ""; }
-  31.9070%, 50.1395% { content: "w"; }
-  33.0465%, 49.0000% { content: "we"; }
-  34.1860%, 47.8605% { content: "web"; }
-  35.3256%, 46.7209% { content: "webs"; }
-  36.4651%, 45.5814% { content: "websi"; }
-  37.6047%, 44.4419% { content: "websit"; }
-  38.7443%, 43.3024% { content: "website"; }
+  18.52%,27.83%{content: "B";}
+  19.85%,26.5%{content: "Be";}
+  21.18%,25.17%{content: "Ben";}
+  22.51%,23.84%{content: "Benq";}
 
-  54.6977%, 75.2093% { content: ""; }
-  55.8372%, 74.0698% { content: "A"; }
-  56.9767%, 72.9302% { content: "Am"; }
-  58.1163%, 71.7907% { content: "Ama"; }
-  59.2558%, 70.6512% { content: "Amaz"; }
-  60.3953%, 69.5116% { content: "Amazo"; }
-  61.5349%, 68.3721% { content: "Amazon"; }
+  29.16%,43.79%{content: "";}
+  30.49%,42.46%{content: "C";}
+  31.82%,41.13%{content: "Ca";}
+  33.15%,39.8%{content: "Cas";}
+  34.48%,38.47%{content: "Casi";}
+  35.81%,37.14%{content: "Casio";}
 
-  78.6279%, 96.8605% { content: ""; }
-  79.7674%, 95.7209% { content: "h"; }
-  80.9070%, 94.5814% { content: "hu"; }
-  82.0465%, 93.4419% { content: "hum"; }
-  83.1860%, 92.3023% { content: "huma"; }
-  84.3256%, 91.1628% { content: "human"; }
+  45.12%,65.07%{content: "F";}
+  46.45%,63.74%{content: "Fu";}
+  47.78%,62.41%{content: "Fuj";}
+  49.11%,61.08%{content: "Fuji";}
+  50.44%,59.75%{content: "Fujif";}
+  51.77%,58.42%{content: "Fujifi";}
+  53.1%,57.09%{content: "Fujifil";}
+  54.43%,55.76%{content: "Fujifilm";}
+
+  66.04%,78.37%{content: "";}
+  67.73%,77.04%{content: "L";}
+  69.06%,75.71%{content: "Le";}
+  70.39%,74.38%{content: "Leg";}
+  71.72%,73.05%{content: "Lego";}
+
+  79.7%,83.69%{content: "L";}
+  81.03%,82.36%{content: "LG";}
+
+  85.02%,96.66%{content: "L";}
+  86.35%,95.33%{content: "Lo";}
+  87.68%,94.00%{content: "Log";}
+  89.01%,92.67%{content: "Logi";}
+  90.34%,91.34%{content: "Logit";}
+
+  97%,100%{content: "S";}
+  97.5%,99.5%{content: "So";}
+  98%,99%{content: "Son";}
+  98.5%{content: "Sony";}
+
+
+
+
+
+
+
 }
 
 @keyframes blink {
@@ -68,12 +89,12 @@
     animation: none;
   }
   
-  @keyframes sequencePopup {
+  /* @keyframes sequencePopup {
     0%, 100% { content: "developer"; }
     25% { content: "PRONAY"; }
     50% { content: "reader"; }
     75% { content: "human"; }
-  }
+  } */
 
   .typewriter::before {
     content: "developer";
@@ -97,22 +118,12 @@
   /* display: flex;
   align-items: center; */
 }
-.btn_create{
-color: #fff;  
-width: 100%;  
-border: 1px solid #fff;  
-margin-top: 30px;
-}
+.btn_create{color: #000;width: 100%;border: 1px solid #fff;margin-top: 30px;background: #ffffff;}
 .btn_create:hover,.btn_find:hover{
-  color: #fff; 
-  border: 1px solid #fff;  
+  color: #fff;
+  border: 1px solid #fff;
 }
-.btn_find{
-color: #fff;  
-width: 100%;  
-border: 1px solid #fff;  
-margin-top: 30px;
-}
+.btn_find{color: #000;width: 100%;border: 1px solid #fff;margin-top: 30px;background: #ffffff;}
 .auto_type {
 
 
@@ -313,6 +324,7 @@ padding: 10px;
 .slider .slide-track {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
+  animation-iteration-count: infinite;
   display: flex;
   width: calc(250px * 14);
 }
@@ -386,6 +398,10 @@ padding: 10px;
 
 }
 @media (max-width: 768px){
+  .owl-carousel .owl-item img {
+    width: 60%;
+    margin: auto;
+  }
   .auto_type h1 {
     font-size: 40px;
   }
