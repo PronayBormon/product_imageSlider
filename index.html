@@ -23,7 +23,7 @@
     <div class="container-flui">
       
       <div class="bannar">
-        <video muted autoplay loop src="videos/bannar.mp4" class="img-fluid"></video>
+        <video muted autoplay loop src="videos/bannar1.mp4" class="img-fluid"></video>
 
         <!-- navbar part start here -->
       <div class="container">
@@ -33,7 +33,7 @@
               <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class=""><i class="fa-solid fa-bars-staggered"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 ms-2 mb-lg-0">
@@ -124,6 +124,8 @@
       $('.owl-carousel').owlCarousel({
         loop:true,
         nav:false,
+        // animateOut: 'slideOutDown',
+        animateIn: 'fadeInRight',
         autoplay:true,
         autoplayTimeout:4000,
         responsive:{
